@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Movement';
+    src: url('../fonts/Movement/Variable/MovementV.ttf')
+    format('truetype-variations');
+    font-weight: 100 900;
+}
+
+
+@font-face {
+    font-family: 'Delicious Handrawn';
+    src: url('../fonts/DeliciousHandrawn-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'Rochester';
+    src: url('../fonts/Rochester-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/Lobster-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('../fonts/YesevaOne-Regular.ttf')
+    format('truetype');
+}

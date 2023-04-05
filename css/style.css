@@ -1,0 +1,434 @@
+@import "fonts.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-image: linear-gradient(white, rgb(19, 151, 109), rgb(251, 255, 18), rgb(255, 174, 0), rgb(21, 62, 247), white);
+}
+
+img {
+    max-width: 80%;
+    min-width: 20%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.wrapper {
+    padding: 10px 100px;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sun {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+/* Code below from https://codepen.io/chrishodges27/pen/QxGdmb */
+.border {
+    padding: 5px;
+    background: linear-gradient(110deg, #26547c 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #ef476f 34%, #ffd166 34%);
+    background-size: 400% 400%;
+    height: 400px;
+    background-position: 25% 50%;
+    animation: Gradient;
+    -webkit-animation: Gradient 15s ease infinite;
+  }
+
+  .inner-cutout {
+    padding: 40px 0;
+    display: block;
+    background-color:#073b4c;
+    margin: 2%;
+    padding-bottom: 40px;
+    height: 300px;
+    background: radial-gradient(#06d69ec7, #8bf3d7a8);
+    background-size: 300%;
+    background-position:50% 50%;
+  }
+
+  .knockout {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    background: linear-gradient(110deg, #26547c 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #ef476f 34%, #ffd166 34%);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .knockout {
+      animation: Gradient 5s ease infinite;
+      -webkit-animation: Gradient 15s ease infinite;
+      -moz-animation: Gradient 5s ease infinite;
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 30% 50%
+    }
+    50% {
+      background-position: 20% 50%
+    }
+    100% {
+      background-position: 30% 50%
+    }
+  }
+  /* Code from https://codepen.io/chrishodges27/pen/QxGdmb ends. */
+
+h1 {
+    font-family: 'Delicious Handrawn', cursive;
+} 
+
+h2 {
+    font-family: 'Rochester', cursive;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+}
+
+h4 {
+    font-family: 'Yeseva One', cursive;
+}
+
+h5 {
+    font-family: 'Movement';
+    font-size: 100px;
+    font-weight: 100 900;
+    font-variation-settings: "SPAC" 120, "wght" 100;
+}
+
+.disclaimer {
+    text-align: right;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.flowers {
+    margin-top: 80px;
+}
+
+.anitext {
+    font-size: 150px;
+    margin-top: 0;
+    margin-bottom: 70px;
+
+    animation-name: textani;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease;
+}
+
+@keyframes textani {
+    0% {
+        color: #ff0a54;
+        font-variation-settings: "SPAC" 120, "wght" 100;
+    }
+
+    20% {
+        color: #ff477e;
+        font-variation-settings: "SPAC" 115, "wght" 200;
+    }
+
+    40% {
+        color: #ff5c8a;
+        font-variation-settings: "SPAC" 110, "wght" 300;
+    }
+
+    60% {
+        color: #ff7096;
+        font-variation-settings: "SPAC" 105, "wght" 500;
+    }
+
+    80% {
+        color: #ff85a1;
+        font-variation-settings: "SPAC" 100, "wght" 700;
+    }
+
+    100% {
+        color: #ff99ac;
+        font-variation-settings: "SPAC" 100, "wght" 900;
+    }
+}
+
+/* Code Below Sourced from https://codepen.io/alvarotrigo/pen/PoKMyNO */
+.animate-charcter {
+    text-transform: uppercase;
+   background-image: linear-gradient(
+     -225deg,
+     #7339a7 0%,
+     #1d8ffd 20%,
+     #05c868 40%,
+     #fde700 60%,
+     #fb7f06 80%,
+     #fe0000 100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 4s linear infinite;
+   display: inline-block;
+     font-size: 150px;
+     margin-top: 100px;
+     margin-bottom: 100px;
+ }
+ 
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+   }
+ }
+ /* Code from https://codepen.io/alvarotrigo/pen/PoKMyNO ends */
+
+/* Code below from https://codepen.io/alvarotrigo/pen/NWvQObB */
+ .lineDown {
+    font-size: 150px;
+    animation: 4s anim-lineDown ease-in-out infinite;
+    transition: ease;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  @keyframes anim-lineDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-80%);
+      color: #4f3130;
+    }
+    25% {
+      opacity: 1;
+      color: #753742;
+    }
+    50% {
+      opacity: 1;
+      color: #aa5042;
+    }
+    75% {
+        opacity: 1;
+        color: #d8572a;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0%);
+        color: #db7c26;
+    }
+  }
+/* Code from https://codepen.io/alvarotrigo/pen/NWvQObB ends */
+
+.anitext1 {
+    font-size: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    animation-name: textani1;
+    animation-duration: 14s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textani1 {
+    0% {
+        color: #5fa8d3;
+    }
+
+    25% {
+        color: #cae9ff;
+    }
+
+    50% {
+        color: #1b4965;
+    }
+
+    75% {
+        color: #62b6cb;
+    }
+
+    100% {
+        color: #bee9e8;
+    }
+}
+
+.border1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-radial-gradient(#5503ad8d, #8267c78a 10%, #b3e9c796 20%, #c2f8cba7 30%, #f0fff1b9 25%);
+    height: 400px;
+}
+
+.box {
+    width: 400px;
+    height: 200px;
+    opacity: 80%;
+    text-align: center;
+    background-color: #5503ad8d;
+
+    animation-name: box;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; 
+    transition: ease;
+}
+
+@keyframes box {
+    0% {
+        border-radius: 100%;  
+        background-color: #5503ad8d; 
+    }
+
+    25% {
+        border-radius: 80%; 
+        background-color: #8267c78a;
+    }
+
+    50% {
+        border-radius: 50%; 
+        background-color: #b3e9c796;
+    }
+
+    75% {
+        border-radius: 40%; 
+        background-color: #c2f8cba7;
+    }
+
+    100% {
+        border-radius: 40%; 
+        background-color: #f0fff1b9;
+    }
+}
+
+.cite {
+    text-align: center;
+    font-size: 60px;
+    color: #3c03ad;
+    text-decoration: none;
+}
+
+.cite:hover {
+    color: #8cf19c;
+    transition: 0.2s;
+  }
+
+  .box1 {
+    height: 100px;
+    opacity: 80%;
+    margin-top: 30px;
+    background-color: #5503ad8d;
+
+    animation-name: box1;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; 
+    transition: ease;
+}
+
+@keyframes box1 {
+    0% {
+        border-radius: 100%;  
+        background-color: #5503ad; 
+    }
+
+    25% {
+        border-radius: 80%; 
+        background-color: #8267c7;
+    }
+
+    50% {
+        border-radius: 50%; 
+        background-color: #b3e9c7;
+    }
+
+    75% {
+        border-radius: 40%; 
+        background-color: #c2f8cb;
+    }
+
+    100% {
+        border-radius: 40%; 
+        background-color: #f0fff1;
+    }
+}
+
+.cite1 {
+    text-align: center;
+    font-size: 60px;
+    color: #250963;
+    text-decoration: none;
+}
+
+.cite1:hover {
+    color: #61ad6e;
+    transition: 0.2s;
+  }
+
+  .cite2 {
+    text-align: center;
+    font-size: 60px;
+    color: #38078d;
+    text-decoration: none;
+}
+
+.info {
+    font-size: 14px;
+}
+
+.box2 {
+    height: 100px;
+    opacity: 80%;
+    margin-top: 30px;
+    background-color: #8267c7;
+
+    animation-name: box2;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; 
+    transition: ease;
+}
+
+@keyframes box2 {
+    0% {
+        border-radius: 100%;  
+    }
+
+    25% {
+        border-radius: 75%; 
+    }
+
+    50% {
+        border-radius: 50%; 
+    }
+
+    75% {
+        border-radius: 25%; 
+    }
+
+    100% {
+        border-radius: 0%; 
+    }
+}
